@@ -1,9 +1,3 @@
----
-format:
-  html:
-    anchor-sections: false
----
-
 # Initial Proposal
 
 ## Project Idea 1: Survival Prediction + Patient Subtype Clustering {#Project_1}
