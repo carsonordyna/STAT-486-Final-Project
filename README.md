@@ -60,8 +60,4 @@ The primary dataset is the National Cancer Database (NCDB) lung cancer dataset. 
 
 This work complies with NCDB's data use restrictions, emphasizing de-identification and refraining from making clinical recommendations.
 
-## License
-
-[Add license information if applicable]
-
 
