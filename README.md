@@ -44,17 +44,28 @@ The primary dataset is the National Cancer Database (NCDB) lung cancer dataset. 
 1. Clone this repository.
 2. Install the required packages:
    ```
-   pip install -r requirements.txt
+   uv init
+   uv sync
    ```
-3. Ensure you have access to the NCDB data (not included in this repository due to data use restrictions).
+3. Follow the instructions in `data/README.md` to access the data
 
 ## Project Structure
 
-- `demo.ipynb`: Demonstration notebook for the project.
-- `src/analysis_example.ipynb`: Example analysis notebook.
-- `data/data_example.txt`: Example data file (placeholder).
-- `progress/01_proposal.md`: Original project proposal.
-- `requirements.txt`: Python dependencies.
+- `demo.ipynb`: Demonstration notebook for the project containing code to read in the data and plot Kaplan-Meier curves stratied by a choice of categorical variables
+- `src/`: Code to explore, clean, visualize, and analyze the data
+- `data/`: Data files
+- `progress/`: Progress reports
+- `pyproject.toml`: Python dependencies
+
+## Run Order
+
+In the `src` folder, there are three .ipynb notebooks:
+
+* `01_eda.ipynb`
+* `02_clean.ipynb`
+* `03_analysis.ipynb`
+
+For start-to-finish reproducibility, follow along and run the code in each of the files in order (`eda` first, then `clean`, and lastly `analysis`). However, if the clean, ready-to-analyze data is desired, one may begin with the code in `03_analysis.ipynb`.
 
 ## Ethical Considerations
 
